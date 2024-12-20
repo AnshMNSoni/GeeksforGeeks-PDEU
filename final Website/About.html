@@ -1,0 +1,330 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" media="screen" href="Navbar.css"></link>
+    <link type="text/css" rel="stylesheet" media="screen" href="card.css"></link>
+    <link type="text/css" rel="stylesheet" media="screen" href="Heading.css"></link>
+
+
+    <style>
+
+    /* Navbar Section */
+
+    .image {
+        margin-left: 0 px;
+        margin-bottom: 520px;
+        width: 150px;
+        height: 150px;
+        z-index: 10;
+    }
+    html body {
+        
+font-family: Poppins;
+font-size: 0.8rem;
+background-color: black;
+    }
+
+    /* Content Section */
+
+    #outer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 100%;
+        width: 95%;
+        margin-left: -1300px;
+        margin-top: 300px;
+    }
+
+    .div {
+        width: 500px;
+        flex: 1 0 50px;
+        margin: 0;
+        position: relative;
+        /* background-color: rgb(177, 36, 36); */
+      border-radius: 20%;
+      /* border: 10px solid black; */
+      color: white;
+      /* margin-top: 500px; */
+      margin-left: -100px;
+      
+    }
+   
+   
+   .container-2{
+    border: 5px solid white;
+    width: 400px;
+    height: 400px;
+    margin-left: 140px;
+    border-radius: 20%;
+   }
+   .box{
+    /* margin-top: -360px;  */
+    margin-top: -360px;
+    position: absolute; 
+    width: 90%; 
+    margin-left: 30px;
+    backdrop-filter: blur(10px);
+    border-radius: 20%;
+
+   }
+   .heading{
+    text-align: center;
+    margin-left: 70px;
+    font-size: 22px;
+   }
+
+/* Team Section */
+
+   .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 100%;
+
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-github {
+    background: #007bb5;
+    color: white;
+  }
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  
+  
+}
+
+
+    </style>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <!-- Navbar Section -->
+
+    <img src="GFG_logo.jpeg" class="image">
+  <ul class="bar">
+    
+    <li><a href="index.html" title="Home">Home</a></li>
+    <li><a href="About.html" title="About Us">About Us</a></li>
+    <li><a href="#" title="Event">Event</a></li>
+    <li><a href="#" title="Contact U">Contact US</a></li>
+  </ul>
+  <script src="Navbar.js"></script>
+
+
+  <!-- Content section  -->
+
+    <div id="outer">
+        <div class="div">
+          <img src="GFG_logo.jpeg" class="container-2">
+          
+        </div>
+        <div class="div" style="font-size: 17px; padding: 0px; " >
+            <img src="green.jfif" style="width: 95%; height: 400px; backdrop-filter: blur(10px); border-radius: 15%;">
+          <div class="box" >
+            
+           <b class="heading"> Welcome to the GeeksforGeeks Student Chapter at PDEU—</b><br><br>
+           where caffeine, code, and creativity collide! We're a bunch of tech enthusiasts on a mission to make learning fun, practical, and future-ready. 
+           <br> <br>Whether you’re a coding ninja or just figuring out what Git really means (spoiler: it's not an insult), we've got something for you! From CS fundamentals to hot topics like Web Dev, ML, App Dev, and even Cloud Computing, we’re here to turn confusion into clarity—and maybe a few late-night debugging sessions.
+<br><br>
+            Workshops, coding competitions, and meme-worthy community vibes? Check. A place to learn, grow, and connect with people who get just as excited about semicolons and syntax? Double-check. So, if you’re ready to level up your skills and have some fun while doing it, welcome to the geek side—we’ve got code!
+                     
+          </div>
+      </div>
+    </div>
+
+
+    <!-- Heading Section -->
+
+    <div class="container-3">
+        <h1 class="gold-text" data-text="Our Team">
+            <span class="gold-text__highlight" data-text="Our Team">Our Team</span>
+        </h1>
+    </div>
+
+
+    <!-- Team Section -->
+
+    <div class="container"> 
+        <div class="panel">
+          <div class="ring">
+            <div class="card card1"></div>
+            <div class="border">
+              <p class="title"></p>
+              <div class="slide">
+                <h6 class="para">Vice Precident of GFG</h6>
+                <div class="line">
+                  <h6 class="para">Prayag Thaker</h6> 
+                  <!-- <h6 class="para"></h6> -->
+                </div>
+                <div class="line">
+                  <h6 class="para"><a href="https://www.google.com/" class="fa fa-linkedin"></a></h6> 
+                  <h6 class="para"><a href="https://www.google.com/" class="fa fa-github"></a></h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="ring">
+            <div class="card card2"></div>
+            <div class="border">
+              <p class="title"></p>
+              <div class="slide">
+                <h6 class="para">Precident of GFG</h6>
+                <div class="line">
+                  <h6 class="para">Aarchi Shah</h6> 
+                  <!-- <h6 class="para"></h6> -->
+                </div>
+                <div class="line">
+                  <h6 class="para"><a href="https://www.google.com/" class="fa fa-linkedin"></a></h6> 
+                  <h6 class="para"><a href="https://www.google.com/" class="fa fa-github"></a></h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+    <!-- Team Setion part 2 -->
+
+        <div class="other"> 
+        <div class="panel">
+          <div class="ring">
+            <div class="card card3"></div>
+            <div class="border">
+              <p class="title"></p>
+              <div class="slide">
+                <h6 class="para">Precident of GFG</h6>
+                <div class="line">
+                  <h6 class="para">Aarchi Shah</h6>
+                  <!-- <h6 class="para">£399</h6> -->
+      
+                </div>
+                <div class="line">
+                  <h6 class="para"><a href="https://www.google.com/" class="fa fa-linkedin"></a></h6> 
+                  <h6 class="para"><a href="https://www.google.com/" class="fa fa-github"></a></h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel">
+            <div class="ring">
+              <div class="card card4"></div>
+              <div class="border">
+                <p class="title"></p>
+                <div class="slide">
+                  <h6 class="para">Precident of GFG</h6>
+                  <div class="line">
+                    <h6 class="para">Aarchi Shah</h6> 
+                    <!-- <h6 class="para"></h6> -->
+        
+                  </div>
+                  <div class="line">
+                    <h6 class="para"><a href="https://www.google.com/" class="fa fa-linkedin"></a></h6> 
+                    <h6 class="para"><a href="https://www.google.com/" class="fa fa-github"></a></h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="panel">
+            <div class="ring">
+              <div class="card card5"></div>
+              <div class="border">
+                <p class="title"></p>
+                <div class="slide">
+                  <h6 class="para">Precident of GFG</h6>
+                  <div class="line">
+                    <h6 class="para">Aarchi Shah</h6> 
+                    <!-- <h6 class="para"></h6> -->
+        
+                  </div>
+                  <div class="line">
+                    <h6 class="para"><a href="https://www.google.com/" class="fa fa-linkedin"></a></h6> 
+                    <h6 class="para"><a href="https://www.google.com/" class="fa fa-github"></a></h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div> 
+
+
+    <!-- Team Section part 3 -->
+
+      <div class="other-2">
+
+        <div class="panel">
+            <div class="ring">
+              <div class="card card6"></div>
+              <div class="border">
+                <p class="title"></p>
+                <div class="slide">
+                  <h6 class="para">Precident of GFG</h6>
+                  <div class="line">
+                    <h6 class="para">Aarchi Shah</h6>
+                    <!-- <h6 class="para">£399</h6> -->
+        
+                  </div>
+                  <div class="line">
+                    <h6 class="para"><a href="https://www.google.com/" class="fa fa-linkedin"></a></h6> 
+                    <h6 class="para"><a href="https://www.google.com/" class="fa fa-github"></a></h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="panel">
+              <div class="ring">
+                <div class="card card7"></div>
+                <div class="border">
+                  <p class="title"></p>
+                  <div class="slide">
+                    <h6 class="para">Precident of GFG</h6>
+                    <div class="line">
+                      <h6 class="para">Aarchi Shah</h6> 
+                      <!-- <h6 class="para"></h6> -->
+          
+                    </div>
+                    <div class="line">
+                      <h6 class="para"><a href="https://www.google.com/" class="fa fa-linkedin"></a></h6> 
+                      <h6 class="para"><a href="https://www.google.com/" class="fa fa-github"></a></h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+
+
+      </div>
+
+
+
+</body>
+</html>
+
