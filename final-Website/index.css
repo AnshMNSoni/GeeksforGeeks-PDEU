@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+body {
+  margin: 0;
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font: 62.5% "Montserrat", sans-serif;
+  }
+
+  /* navabr section */
+
+img {
+  height: 165px;
+  width: 165px;
+}
+
+.bar {
+ margin: -100px 0px 430px 600px;
+  padding: 1em;
+  display: flex;
+  min-width: 380px;
+  height: 50px;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1;
+  backdrop-filter: blur(10px);
+}
+
+.bar li {
+  position: relative;
+  list-style: none;
+  border-radius: 1em;
+}
+
+.bar li::before,
+.bar li::after {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #36EF55;
+  transition: all 0.5s cubic-bezier(0.4, -1, 0.2, -1);
+}
+
+.bar li::before {
+  top: 0;
+  border-top-right-radius: 0.5em;
+  border-top-left-radius: 0.5em;
+}
+
+.bar li::after {
+  bottom: 0;
+  border-bottom-right-radius: 0.5em;
+  border-bottom-left-radius: 0.5em;
+}
+
+.bar li:hover::before,
+.bar li:hover::after {
+  width: 25%;
+  height: 3px;
+}
+
+.bar li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  padding: 0.5em 2em;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+}
+
+.bar li.active {
+  border-color: #36EF55;
+}
+
+.bar li.active::before,
+.bar li.active::after {
+  width: 100%;
+  height: 50%;
+}
+
+
+
+/* home page css */
+
+.content {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: rgb(44, 39, 39);
+}
+
+.content h1 {
+  text-transform: uppercase;
+  font-size: 40px;
+  margin-top: 80px;
+}
+.content p {
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
+}
+
+
+/* design of home page */
+
+
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+body {
+  height: 100vh;
+  overflow: hidden;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: green;
+  font-family: "Share Tech Mono", "Cascadia Code", Menlo, Monaco, "Courier New", monospace;
+  font-size: 6rem;
+  filter: drop-shadow(0px 0px 5px currentColor);
+}
+
+.grid-container {
+  --grid: 10rem;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-style: preserve-3d;
+  perspective: 100rem;
+  -webkit-animation: rotate 100s linear infinite forwards;
+          animation: rotate 100s linear infinite forwards;
+}
+.grid-container .plane {
+  --dir: 1;
+  width: 300%;
+  height: 150%;
+  min-height: 70rem;
+  position: absolute;
+  bottom: 0;
+  transform-style: preserve-3d;
+  transform-origin: bottom center;
+  transform: translateX(-50%) rotateX(85deg);
+}
+.grid-container .plane:last-child {
+  --dir: -1;
+  top: 0;
+  transform-origin: top center;
+  transform: translateX(-50%) rotateX(-85deg);
+}
+.grid-container .plane:last-child > *::after {
+  background-image: linear-gradient(to top, black var(--grid), rgba(0, 0, 0, 0));
+}
+.grid-container .plane > * {
+  transform-style: preserve-3d;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.grid-container .plane > *::before, .grid-container .plane > *::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.grid-container .plane > *::before {
+  background-image: repeating-linear-gradient(to left, green, green 4px, transparent 4px, transparent var(--grid)), repeating-linear-gradient(to bottom, green, green 4px, transparent 4px, transparent var(--grid));
+  -webkit-animation: move 1s linear infinite forwards;
+          animation: move 1s linear infinite forwards;
+}
+.grid-container .plane > *::after {
+  background-image: linear-gradient(to bottom, black var(--grid), rgba(0, 0, 0, 0));
+  z-index: 1;
+  transform: translateZ(1px);
+}
+.grid-container .plane .glow {
+  filter: blur(1rem);
+  z-index: 1;
+  mix-blend-mode: plus-lighter;
+}
+
+@-webkit-keyframes move {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(calc(var(--grid) * var(--dir)));
+  }
+}
+
+@keyframes move {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(calc(var(--grid) * var(--dir)));
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    visibility: visible;
+  }
+  50% {
+    visibility: visible;
+  }
+  51% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+@keyframes blink {
+  0% {
+    visibility: visible;
+  }
+  50% {
+    visibility: visible;
+  }
+  51% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
