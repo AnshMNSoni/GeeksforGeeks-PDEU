@@ -4,7 +4,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/css-bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/css-font-awesome.min.css">
 
 	<!-- CSS Links-->
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
@@ -28,8 +29,8 @@
 
 	<!-- Contact CSS links -->
 	<link rel="icon" type="image/png" href="favicons/icons-favicon.ico">
-	<link rel="stylesheet" type="text/css" href="css/css-bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/css-font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/css-bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/css-font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 	<link rel="stylesheet" type="text/css" href="/ContactUs/css/css-main.css">
 	<link rel="stylesheet" type="text/css" href="/ContactUs/css/css-util.css">
@@ -108,6 +109,7 @@
 		}
 
 		.fa-github {
+			position: relative;
 			background: #007bb5;
 			color: white;
 		}
@@ -312,11 +314,11 @@
 			rgb(235, 235, 235);
 		}
 		
-		p {
+		/* p {
 			text-align: center;
 			position: absolute;
 			font-family: "Playfair Display";
-		}
+		} */
 		
 		.title-1 {
 			font-size: 36px;
@@ -377,6 +379,7 @@
 		.card-hover:hover .card-img-top {
 			transform: scale(1.1);
 		}
+
 	</style>
 
 </head>
@@ -577,15 +580,7 @@
                 </div>
               </div>
             </div>
-  
-
-
       </div>
-
-
-
-
-
 	</section>
 
 
@@ -839,10 +834,7 @@
 				</form>
 
 				<div class="contact100-more flex-col-c-m"
-					style="background-image: url('img/download(2).jpg'); background-size: cover; background-repeat: no-repeat;">
-
-					<img src="img/logo(3).png" class="logo" />
-					<span class="txt4 p-b-20">GeeksForGeeks @ PDEU</span>
+					style="background-image: url('assets/images/download(2).jpg'); background-size: cover; background-repeat: no-repeat;">
 
 					<div class="flex-w size1 p-b-47">
 						<div class="txt1 p-r-25">
@@ -893,10 +885,11 @@
 					</div>
 
 					<!-- Social Media Icons-->
-					<ul class="icons">
-						<li><a href="#" class="twitter"><i class="bi bi-twitter"></i></a></li>
-						<li><a href="#" class="instagram"><i class="bi bi-instagram"></i></a></li>
-						<li><a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a></li>
+					<ul class="social-icons">
+						
+						<li><a href="https://www.instagram.com/geeksforgeeks.pdeu/" class="instagram"><i class="bi bi-instagram bi-social"></i></a></li>
+						<li><a href="https://in.linkedin.com/company/geeksforgeekspdeu" class="linkedin"><i class="bi bi-linkedin bi-social"></i></a></li>
+						<li><a href="https://github.com/GeeksForGeeks-PDEU" class="github"><i class="bi bi-github bi-social"></i></a></li>
 					</ul>
 				</div>
 			</div>
@@ -926,7 +919,7 @@
 	<script src="assets/js/main.js"></script>
 
 	<!-- Scripts-->
-	<script src="js/validation.js"></script>
+	<script src="assets/js/validation.js"></script>
 
 	<!-- Bootstrap JS -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

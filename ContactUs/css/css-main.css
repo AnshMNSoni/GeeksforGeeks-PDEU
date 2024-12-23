@@ -137,15 +137,15 @@ iframe {
   text-decoration: none;
 }
 
-.txt4 {
+/* .txt-4 {
   position: relative;
   font-family: Poppins-Regular;
   font-size: 24px;
   line-height: 1.6;
   color: #ffffff;
-  bottom: 200px;
-  left: 56px;
-}
+  bottom: 110px;
+  left: 70px;
+} */
 
 /*Size Css*/
 .size1 {
@@ -461,15 +461,15 @@ textarea.input100 {
 
 
 
-.logo{
+/* .logo{
   position: relative;
   height: 100px;
-  bottom:130px;
-  right: 150px;
-}
+  top: 50px;
+  left: 60px;
+} */
 
 /* Icons */
-.icons {
+.social-icons {
   position: relative;
   display: flex;
   gap: 30px;
@@ -479,11 +479,11 @@ textarea.input100 {
   top: 60px;
 }
 
-.icons li {
+.social-icons li {
   display: inline-block;
 }
 
-.icons a {
+.social-icons a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -496,43 +496,49 @@ textarea.input100 {
   transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
   position: relative;
   overflow: hidden;
-  transform-origin: center center; /* Ensures scaling happens from the center */
+  transform-origin: center center; 
 }
 
-.icons a i {
-  transition: none; /* No transition needed for icon */
+.social-icons a i {
+  transition: none; 
 }
 
-.icons a.twitter {
-  background-color: #1da1f2;
+.social-icons a.github {
+  background-color: #808080;
 }
 
-.icons a.instagram {
+.social-icons a.instagram {
   background-color: #e1306c;
 }
 
-.icons a.linkedin {
+.social-icons a.linkedin {
   background-color: #0077b5;
 }
 
-.icons a:hover {
+.social-icons a:hover {
   transform: scale(1.2); 
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
   opacity: 0.9;
 }
 
-.icons a.twitter:hover {
-  background-color: #0c85d0;
+.social-icons a.github:hover {
+  background-color: #808080;
 }
 
-.icons a.instagram:hover {
+.social-icons a.instagram:hover {
   background-color: #b12e5c;
 }
 
-.icons a.linkedin:hover {
+.social-icons a.linkedin:hover {
   background-color: #005582;
 }
 
+.bi-social{
+  top:2px;
+  left: 0.5px;
+}
+
+/* Form Validation Css */
 .alert-validate {
   position: relative;
   animation: shake 0.3s ease-in-out; 
