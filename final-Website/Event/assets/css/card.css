@@ -1,6 +1,13 @@
-
+body {
+    margin: 0;
+    background-color: #2e2e31;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    /* width: 100vw; */
+  }
   
-  .container-1 {
+  .container {
     /* height: 100vh; */
     width: 100vw;
     /* max-height: 600px; */
@@ -13,8 +20,8 @@
     margin: 0 auto;
     /* margin-left: -80px; */
 
-    margin-left: -200px;
-   
+    margin-left: -1150px;
+    margin-top: 1400px;
   }
     
   .other {
@@ -50,7 +57,7 @@
     display: flex;
   }
   
-  .panel-1 {
+  .panel {
     height: 270px;
     width: 190px;
     position: relative;
@@ -58,7 +65,7 @@
     margin-left: 350px;
   
     &:hover {
-      .card-1 {
+      .card {
         filter: blur(1.5px);
       }
       .card1 {
@@ -82,13 +89,13 @@
       .card7 {
         background-size: 115% 115%;
       }
-      .title-1 {
+      .title {
         color: rgba(255, 255, 255, 0.2);
       }
-      .border-1 {
+      .border {
         border: 1px solid rgba(255, 255, 255, 1);
       }
-      .slide-1 {
+      .slide {
         bottom: 0px;
       }
       .ring:before,
@@ -98,10 +105,10 @@
     }
   }
   .ring,
-  .card-1,
-  .border-1,
-  .slide-1,
-  .line-1 {
+  .card,
+  .border,
+  .slide,
+  .line {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,7 +123,7 @@
     font-size: 170px;
   }
   
-  .card-1 {
+  .card {
     background: #f0ead6;
     position: relative;
     transition: all 1s;
@@ -197,7 +204,7 @@
     font-family: "Playfair Display";
   }
   
-  .title-1 {
+  .title {
     font-size: 36px;
     font-weight: 700;
     transition: all 1s;
@@ -214,7 +221,7 @@
     z-index: 1;
   }
   
-  .border-1 {
+  .border {
     position: absolute;
     border: 1px solid rgba(255, 255, 255, 0.5);
     height: 260px;
@@ -224,7 +231,7 @@
     /* margin-top: 200px; */
   }
   
-  .slide-1 {
+  .slide {
     height: 260px;
     width: 180px;
     position: absolute;
@@ -234,5 +241,3 @@
     transition: bottom 1s;
     flex-direction: column;
   }
-
-  
