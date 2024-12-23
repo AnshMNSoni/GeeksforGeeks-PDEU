@@ -1,13 +1,6 @@
-body {
-    margin: 0;
-    background-color: #2e2e31;
-    display: flex;
-    align-items: center;
-    height: 100vh;
-    /* width: 100vw; */
-  }
+
   
-  .container {
+  .container-1 {
     /* height: 100vh; */
     width: 100vw;
     /* max-height: 600px; */
@@ -20,8 +13,8 @@ body {
     margin: 0 auto;
     /* margin-left: -80px; */
 
-    margin-left: -1150px;
-    margin-top: 1400px;
+    margin-left: -200px;
+   
   }
     
   .other {
@@ -57,7 +50,7 @@ body {
     display: flex;
   }
   
-  .panel {
+  .panel-1 {
     height: 270px;
     width: 190px;
     position: relative;
@@ -65,7 +58,7 @@ body {
     margin-left: 350px;
   
     &:hover {
-      .card {
+      .card-1 {
         filter: blur(1.5px);
       }
       .card1 {
@@ -89,13 +82,13 @@ body {
       .card7 {
         background-size: 115% 115%;
       }
-      .title {
+      .title-1 {
         color: rgba(255, 255, 255, 0.2);
       }
-      .border {
+      .border-1 {
         border: 1px solid rgba(255, 255, 255, 1);
       }
-      .slide {
+      .slide-1 {
         bottom: 0px;
       }
       .ring:before,
@@ -105,10 +98,10 @@ body {
     }
   }
   .ring,
-  .card,
-  .border,
-  .slide,
-  .line {
+  .card-1,
+  .border-1,
+  .slide-1,
+  .line-1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,7 +116,7 @@ body {
     font-size: 170px;
   }
   
-  .card {
+  .card-1 {
     background: #f0ead6;
     position: relative;
     transition: all 1s;
@@ -204,7 +197,7 @@ body {
     font-family: "Playfair Display";
   }
   
-  .title {
+  .title-1 {
     font-size: 36px;
     font-weight: 700;
     transition: all 1s;
@@ -221,7 +214,7 @@ body {
     z-index: 1;
   }
   
-  .border {
+  .border-1 {
     position: absolute;
     border: 1px solid rgba(255, 255, 255, 0.5);
     height: 260px;
@@ -231,7 +224,7 @@ body {
     /* margin-top: 200px; */
   }
   
-  .slide {
+  .slide-1 {
     height: 260px;
     width: 180px;
     position: absolute;
@@ -241,3 +234,5 @@ body {
     transition: bottom 1s;
     flex-direction: column;
   }
+
+  
