@@ -3026,7 +3026,7 @@ body.homepage.is-preload #header:after {
 		padding-bottom: 1px;
 	}
 
-	#navButton {
+	/* #navButton {
 		-moz-backface-visibility: hidden;
 		-webkit-backface-visibility: hidden;
 		-ms-backface-visibility: hidden;
@@ -3042,9 +3042,9 @@ body.homepage.is-preload #header:after {
 		top: 0;
 		width: 100%;
 		z-index: 10001;
-	}
+	} */
 
-	#navButton .toggle {
+	/* #navButton .toggle {
 		text-decoration: none;
 		position: absolute;
 		left: 0;
@@ -3053,9 +3053,9 @@ body.homepage.is-preload #header:after {
 		height: 100%;
 		border: 0;
 		outline: 0;
-	}
+	} */
 
-	#navButton .toggle:before {
+	/* #navButton .toggle:before {
 		-moz-osx-font-smoothing: grayscale;
 		-webkit-font-smoothing: antialiased;
 		display: inline-block;
@@ -3086,9 +3086,9 @@ body.homepage.is-preload #header:after {
 		background: rgba(132, 128, 136, 0.75);
 		border-top: 0;
 		border-radius: 0 0 0.35em 0.35em;
-	}
+	} */
 
-	#navPanel {
+	/* #navPanel {
 		-moz-backface-visibility: hidden;
 		-webkit-backface-visibility: hidden;
 		-ms-backface-visibility: hidden;
@@ -3112,9 +3112,9 @@ body.homepage.is-preload #header:after {
 		background: #1f1920;
 		box-shadow: inset 0px -2px 5px 0px rgba(0, 0, 0, 0.25);
 		font-size: 1em;
-	}
+	} */
 
-	#navPanel:before {
+	/* #navPanel:before {
 		content: '';
 		display: block;
 		position: absolute;
@@ -3124,7 +3124,7 @@ body.homepage.is-preload #header:after {
 		height: 100%;
 		background: url("images/overlay.png");
 		background-size: 128px 128px;
-	}
+	} */
 
 	#navPanel .link {
 		position: relative;
