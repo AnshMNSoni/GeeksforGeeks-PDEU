@@ -2207,7 +2207,7 @@ input[type="reset"]:hover,
 button:hover,
 .button:hover {
 	color: #fff;
-	background: #ef8376;
+	background: #fff;
 }
 
 input[type="button"].alt,
