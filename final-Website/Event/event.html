@@ -39,6 +39,46 @@
 	<link href="assets/css/timeline.css" rel="stylesheet" />
 
 	<style>
+		/* navbar section */
+		/* General styling for all nav items on hover */
+		.navbar-nav .nav-item:hover {
+			/* Smooth transition */
+			transition: 0.3s;
+			border-radius: 25px;
+			padding-top: 0px;
+			padding-bottom: 0px;
+			padding-right: 5px;
+		}
+
+		/* Specific styling for each nav item */
+		.navbar-nav .nav-item:nth-child(1):hover {
+			background-color: #FF5733;
+			/* Red for Home */
+		}
+
+		.navbar-nav .nav-item:nth-child(2):hover {
+			background-color: #FFC300;
+			/* Yellow for About Us */
+		}
+
+		.navbar-nav .nav-item:nth-child(3):hover {
+			background-color: #3498DB;
+			/* Blue for Event */
+		}
+
+		.navbar-nav .nav-item:nth-child(4):hover {
+			background-color: #9B59B6;
+			/* Purple for Contact Us */
+		}
+
+		/* Optional: Customize text color on hover */
+		.navbar-nav .nav-link:hover {
+			color: white;
+			/* Change text color */
+			text-decoration: none;
+			/* Add underline */
+		}
+
 		/* Home Section Styles */
 		#home {
 			height: 100vh;
@@ -396,6 +436,41 @@
 
 
 		/* mobile view */
+		@media (max-width: 600px) {
+
+			/* Ensure logo and toggler are aligned */
+			.green-navbar .container-fluid {
+				flex-wrap: nowrap;
+				/* Prevent wrapping */
+			}
+
+			/* Adjust navbar brand and toggler spacing */
+			.green-navbar img {
+				margin-right: auto;
+				/* Push toggler to the right */
+			}
+
+			.navbar-nav {
+				/* Dropdown background */
+				background-color: #4CAF50;
+			}
+
+			/* Nav links styling */
+			.nav-link {
+				color: white;
+				/* Adjust link color */
+				text-align: center;
+				padding: 0.5rem 1rem;
+				display: block;
+				/* Full-width links */
+			}
+
+			/* Nav link hover effect */
+			.nav-link:hover {
+				/* Slightly darker green */
+				color: black;
+			}
+		}
 	</style>
 
 </head>
@@ -925,6 +1000,35 @@
 		});
 	</script>
 
+	<!-- For navbar on mobile -->
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const toggler = document.querySelector(".navbar-toggler");
+			const navbarDrawer = document.querySelector("#navbarDrawer");
+		
+			// Open/close the drawer when toggler is clicked
+			toggler.addEventListener("click", function () {
+				navbarDrawer.classList.toggle("open");
+			});
+		
+			// Close the drawer when a link inside it is clicked
+			const navLinks = navbarDrawer.querySelectorAll(".nav-link");
+			navLinks.forEach(link => {
+				link.addEventListener("click", function () {
+					navbarDrawer.classList.remove("open");
+				});
+			});
+		
+			// Optional: Close the drawer when clicking outside of it
+			document.addEventListener("click", function (e) {
+				if (!navbarDrawer.contains(e.target) && !toggler.contains(e.target)) {
+					navbarDrawer.classList.remove("open");
+				}
+			});
+		});
+		</script>
+		
+		
 
 	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
@@ -939,8 +1043,10 @@
 	<!-- Scripts-->
 	<script src="assets/js/validation.js"></script>
 
-	<!-- Bootstrap JS -->
+	<!-- Bootstrap Bundle with Popper.js -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
 </body>
 
 </html>
